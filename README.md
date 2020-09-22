@@ -37,3 +37,5 @@ To evaluate the performance of the interaction prediction task in one epoch, use
 To evaluate the performance of the interaction prediction task in all epoch, user the followinig command:
 
 ```python  evaluate_all.py --network  --model --method```
+
+For detailed code execution, you can refer to the command line in the ```./Shell``` folder.
