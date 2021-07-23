@@ -4,6 +4,19 @@ The source code and dataset for ICDM2020 paper: Dynamic Graph Collaborative Filt
 
 Our code mainly mainly refers to jodie: https://github.com/srijankr/jodie/, data download method, running environment and initialization are the same as jodie.
 
+If you make use of this code or the DGCF algorithm in your work, please cite the following paper:
+
+```
+@inproceedings{li2020dynamic,
+  title={Dynamic graph collaborative filtering},
+  author={Li, Xiaohan and Zhang, Mengqi and Wu, Shu and Liu, Zheng and Wang, Liang and Philip, S Yu},
+  booktitle={2020 IEEE International Conference on Data Mining (ICDM)},
+  pages={322--331},
+  year={2020},
+  organization={IEEE}
+}
+```
+
 ## Usage
 
 ### Train model
