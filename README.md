@@ -1,23 +1,12 @@
 # DGCF
 
-The source code and dataset for ICDM2020 paper: Dynamic Graph Collaborative Filtering, implemented in Pytorch.
+<img src="dgcf.png" alt="model" style="zoom: 50%;" />
 
-Our code mainly mainly refers to jodie: https://github.com/srijankr/jodie/, data download method, running environment and initialization are the same as jodie.
-
-If you make use of this code or the DGCF algorithm in your work, please cite the following paper:
-
-```
-@inproceedings{li2020dynamic,
-  title={Dynamic graph collaborative filtering},
-  author={Li, Xiaohan and Zhang, Mengqi and Wu, Shu and Liu, Zheng and Wang, Liang and Philip, S Yu},
-  booktitle={2020 IEEE International Conference on Data Mining (ICDM)},
-  pages={322--331},
-  year={2020},
-  organization={IEEE}
-}
-```
+This is the code for the ICDM 2020 Paper: [Dynamic Graph Collaborative Filtering](https://ieeexplore.ieee.org/abstract/document/9338436).
 
 ## Usage
+
+Our code mainly mainly refers to jodie: https://github.com/srijankr/jodie/, data download method, running environment and initialization are the same as jodie.
 
 ### Train model
 To train the DGCF model using the ```data/<network>.csv``` dataset, use the following command. This will save a model for every epoch in the ```saved_models/<network>/``` directory.
@@ -40,7 +29,6 @@ This code can be given the following command-line arguments:
 
 ```--length：``` this is  the aggregator size in second-order aggegator function.
 
-
 ### Evaluate the model
 
 To evaluate the performance of the interaction prediction task in one epoch, use the following command:
@@ -52,3 +40,26 @@ To evaluate the performance of the interaction prediction task in all epoch, use
 ```python  evaluate_all.py --network  --model --method```
 
 For detailed code execution, you can refer to the command line in the ```./Shell``` folder.
+
+
+## Requirements
+
+- python3
+- jsonlines
+- pytorch
+- torch-geometric
+
+## Citation
+
+Please cite our paper if you use the code:
+
+```
+@inproceedings{li2020dynamic,
+  title={Dynamic graph collaborative filtering},
+  author={Li, Xiaohan and Zhang, Mengqi and Wu, Shu and Liu, Zheng and Wang, Liang and Philip, S Yu},
+  booktitle={2020 IEEE International Conference on Data Mining (ICDM)},
+  pages={322--331},
+  year={2020},
+  organization={IEEE}
+}
+```
